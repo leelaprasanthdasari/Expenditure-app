@@ -11,11 +11,21 @@ import {FullCalendarModule} from 'primeng/fullcalendar';
 import {DragDropModule} from 'primeng/dragdrop';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {DataTableModule} from "angular-6-datatable";
+import { LoginPageComponent } from './login-page/login-page.component';
+import { SignupPageComponent } from './signup-page/signup-page.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginPageComponent,
+    SignupPageComponent,
+    SignupComponent,
+    LoginComponent,
+    PageNotFoundComponent
   ],
   imports: [
     DataTableModule,
