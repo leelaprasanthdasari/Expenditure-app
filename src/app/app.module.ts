@@ -18,6 +18,8 @@ import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
+import { CommonModule } from '@angular/common';
+import { SharedModule } from './common/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,9 +27,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SignupPageComponent,
     SignupComponent,
     LoginComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+   
   ],
   imports: [
+    SharedModule,
+    CommonModule,
     DataTableModule,
     BrowserAnimationsModule,
     BrowserModule,
